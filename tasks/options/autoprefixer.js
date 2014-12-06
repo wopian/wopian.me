@@ -6,6 +6,6 @@ module.exports = {
     expand: true,
     flatten: true,
     src: 'assets/css/*.css',
-    dest: 'assets/css/prefixed/'
+    dest: 'assets/css/'
   }
 }
