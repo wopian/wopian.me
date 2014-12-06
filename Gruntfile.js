@@ -33,6 +33,7 @@ module.exports = function(grunt) {
 
   // Default Task is basically a rebuild
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
+  //grunt.registerTask('build:dev', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
 
   // Moved to the tasks folder:
   // grunt.registerTask('dev', ['connect', 'watch']);

@@ -3,6 +3,6 @@ node_js:
   - "0.10"
 before_install: npm install -g grunt-cli
 install: npm install
-before_script: grunt init:dev build:dev
+before_script: grunt #build:dev
 notifications:
   slack: doramune:GPh989bLFlZ5VeUlfuFx8xhm
