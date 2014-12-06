@@ -1,7 +1,7 @@
 module.exports = {
   dist: {
     src: [
-      'assets/javascript/skrollr.js',
+      'assets/javascript/skrollr.min.js',
       'assets/javascript/main.js',
       'assets/javascript/highcharts.js'
     ],

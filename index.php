@@ -4,7 +4,7 @@
 <head>
     <title>Wopian</title>
     <link href='//fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/main.min.css" rel="stylesheet">
 </head>
 
 <body id="skrollr-body">
@@ -87,9 +87,7 @@
     </section>-->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
-    <script type="text/javascript" src="/assets/javascript/main.js"></script>
-    <script type="text/javascript" src="/assets/javascript/highcharts.js"></script>
+    <script type="text/javascript" src="/assets/javascript/app.min.js"></script>
 
     <script type="text/javascript">
         $(function () {
