@@ -6,6 +6,7 @@
     "name": "James Harris"
   }],
   "main": "Gruntfile.js",
+  "homepage": "https://wopian.me/",
   "repository": {
     "type": "git",
     "url": "https://github.com/wopian/wopian.me"
@@ -26,5 +27,8 @@
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
-  }
+  },
+  "scripts": {
+    "test": "grunt"
+  },
 }
