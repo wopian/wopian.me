@@ -16,7 +16,8 @@ section {
   width: 100%;
   min-height: 100vh;
   background: #009688;
-  color: #f00;
+  background: #f00;
+  color: #fff;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
