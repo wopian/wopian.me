@@ -1,5 +1,9 @@
 {
   "name": "wopian",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wopian/wopian.me.git"
+  },
   "version": "0.0.1",
   "devDependencies": {
     "glob": "^4.3.1",
