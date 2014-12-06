@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "Personal site.",
   "author": "James Harris",
-  "contributors": [{
-    "name": "James Harris"
-  }],
+  "contributors": [
+    {
+      "name": "James Harris"
+    }
+  ],
   "main": "Gruntfile.js",
   "homepage": "https://wopian.me/",
   "repository": {
