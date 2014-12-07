@@ -15,7 +15,9 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="/assets/css/year.min.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
         <style type="text/css">
             .back-link a {
                 color: #4ca340;
@@ -129,7 +131,10 @@
         </main>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="/assets/javascript/year.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
 
     </body>
 </html>
