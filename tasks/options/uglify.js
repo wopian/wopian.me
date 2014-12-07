@@ -1,6 +1,8 @@
 module.exports = {
   build: {
-    src: 'production/assets/javascript/app.js',
-    dest: 'production/assets/javascript/app.min.js'
+    files: {
+        'production/assets/javascript/app.min.js' : ['production/assets/javascript/app.js'],
+        'production/assets/javascript/year.min.js' : ['production/assets/javascript/year.js'],
+    }
   }
 }
