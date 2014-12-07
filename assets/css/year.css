@@ -22,11 +22,7 @@ Enjoy responsibly!
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   color: #222;
 }
 
@@ -40,12 +36,11 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-::-moz-selection {
+::-moz-selection, ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
-
-::selection {
+::-moz-selection, ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -121,8 +116,7 @@ section {
   opacity: 0;
 }
 
-.loaded section,
-.no-js section {
+.loaded section, .no-js section {
   opacity: 1;
   transition: opacity 300ms ease-out;
 }
@@ -142,7 +136,13 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image: url("/assets/images/bcg_slide-1.jpg");
+  background-image: url("https://static.hummingbird.me/users/cover_images/000/026/691/thumb/data.jpg?1405814914");
+}
+#slide-1 p {
+  font-size: 72px;
+}
+#slide-1 .big {
+  font-size: 315px;
 }
 
 /* Slide 2 */
@@ -164,7 +164,6 @@ main {
   height: 100%;
   position: relative;
 }
-
 .curtainContainer .curtain {
   width: 300%;
   height: 1px;
@@ -174,7 +173,6 @@ main {
   left: 0;
   opacity: 0;
 }
-
 .curtainContainer .copy {
   position: absolute;
   bottom: 30%;
@@ -191,11 +189,9 @@ main {
 #slide-5 {
   position: relative;
 }
-
 #slide-5 .bcg {
   background-image: url("/assets/images/bcg_slide-5.jpg");
 }
-
 #slide-5 .bcg2 {
   background-image: url("/assets/images/bcg_slide-5b.jpg");
   position: fixed;
@@ -204,7 +200,6 @@ main {
   opacity: 0;
   z-index: 1;
 }
-
 #slide-5 .bcg3 {
   background: none;
   background-color: #010101;
@@ -234,8 +229,13 @@ main {
   padding: 0 8%;
   text-align: center;
 }
+.hsContent h2 {
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
 
-.hsContent h2,
 .copy h2 {
   color: #ffffff;
   font-size: 45px;
@@ -248,7 +248,6 @@ main {
   margin: 0 auto;
   color: #b2b2b2;
 }
-
 .hsContent a {
   color: #b2b2b2;
   text-decoration: underline;
@@ -272,7 +271,6 @@ main {
   /* IE 6/7 fallback */
   *text-indent: -9999px;
 }
-
 .ir:before {
   content: "";
   display: block;
@@ -301,13 +299,7 @@ main {
   position: absolute;
   width: 1px;
 }
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -316,6 +308,10 @@ main {
   width: auto;
 }
 
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
@@ -334,15 +330,20 @@ main {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before,
-.clearfix:after {
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before {
   content: " ";
   /* 1 */
   display: table
   /* 2 */
 }
-
 .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
   clear: both;
 }
 
@@ -350,10 +351,6 @@ main {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix {
-  *zoom: 1;
-}
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -378,11 +375,12 @@ main {
     text-shadow: none !important;
   }
 
-  a,
+  a {
+    text-decoration: underline;
+  }
   a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -394,14 +392,15 @@ main {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  .ir a:after {
     content: "";
   }
 
-  pre,
-  blockquote {
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -411,27 +410,24 @@ main {
     /* h5bp.com/t */
   }
 
-  tr,
-  img {
+  tr {
     page-break-inside: avoid;
   }
 
   img {
+    page-break-inside: avoid;
     max-width: 100% !important;
   }
 
   @page {
     margin: 0.5cm;
   }
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
   }
 }
