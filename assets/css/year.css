@@ -113,7 +113,7 @@ h2 {
 }
 
 .loading {
-  background: url("../img/ico_loading.gif") no-repeat center center;
+  background: url("/assets/images/ico_loading.gif") no-repeat center center;
 }
 
 section {
@@ -142,7 +142,7 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image: url("../img/bcg_slide-1.jpg");
+  background-image: url("/assets/images/bcg_slide-1.jpg");
 }
 
 /* Slide 2 */
@@ -155,7 +155,7 @@ main {
 
 /* Slide 3 */
 #slide-3 .bcg {
-  background-image: url("../img/bcg_slide-3.jpg");
+  background-image: url("/assets/images/bcg_slide-3.jpg");
 }
 
 /* Slide 4 */
@@ -184,7 +184,7 @@ main {
 }
 
 #slide-4 .bcg {
-  background-image: url("../img/bcg_slide-4.jpg");
+  background-image: url("/assets/images/bcg_slide-4.jpg");
 }
 
 /* Slide 5 */
@@ -193,11 +193,11 @@ main {
 }
 
 #slide-5 .bcg {
-  background-image: url("../img/bcg_slide-5.jpg");
+  background-image: url("/assets/images/bcg_slide-5.jpg");
 }
 
 #slide-5 .bcg2 {
-  background-image: url("../img/bcg_slide-5b.jpg");
+  background-image: url("/assets/images/bcg_slide-5b.jpg");
   position: fixed;
   bottom: 0;
   left: 0;
