@@ -1,9 +1,27 @@
-@font-face {
-  font-family: klavika;
-  src: url(../fonts/klavikamedium-tf-webfont.eot?#iefix) format(eot), url(../fonts/klavikamedium-tf-webfont.woff) format(woff), url(../fonts/klavikamedium-tf-webfont.ttf) format(truetype), url(../fonts/klavikamedium-tf-webfont.svg#klavika_mediummedium) format(svg);
-  font-weight: 700;
-  font-style: normal;
-}
+/*
+ _____   _           _         _                        _
+|_   _| | |         | |       | |                      | |
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams.
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 html,
 button,
 input,
@@ -94,10 +112,6 @@ h2 {
   margin-top: 0;
 }
 
-.loading {
-  background: url("../img/ico_loading.gif") no-repeat center center;
-}
-
 section {
   min-width: 960px;
   opacity: 0;
@@ -124,7 +138,7 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image: url("../img/bcg_slide-1.jpg");
+  background-image: url("/assets/images/bcg_slide-1.jpg");
 }
 
 /* Slide 2 */
@@ -137,7 +151,7 @@ main {
 
 /* Slide 3 */
 #slide-3 .bcg {
-  background-image: url("../img/bcg_slide-3.jpg");
+  background-image: url("/assets/images/bcg_slide-3.jpg");
 }
 
 /* Slide 4 */
@@ -166,7 +180,7 @@ main {
 }
 
 #slide-4 .bcg {
-  background-image: url("../img/bcg_slide-4.jpg");
+  background-image: url("/assets/images/bcg_slide-4.jpg");
 }
 
 /* Slide 5 */
@@ -175,11 +189,11 @@ main {
 }
 
 #slide-5 .bcg {
-  background-image: url("../img/bcg_slide-5.jpg");
+  background-image: url("/assets/images/bcg_slide-5.jpg");
 }
 
 #slide-5 .bcg2 {
-  background-image: url("../img/bcg_slide-5b.jpg");
+  background-image: url("/assets/images/bcg_slide-5b.jpg");
   position: fixed;
   bottom: 0;
   left: 0;
@@ -417,218 +431,3 @@ main {
     page-break-after: avoid;
   }
 }
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-img {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Parallax Scroll
-   ========================================================================== */
-body, html {
-  height: 100%;
-  min-height: 100%;
-  background-color: #000000;
-}
-
-.no-js {
-  padding-top: 106px;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-.loading {
-  background: url("../img/ico_loading.gif") no-repeat center center;
-}
-
-section {
-  min-width: 960px;
-  opacity: 0;
-}
-
-.loaded section,
-.no-js section {
-  opacity: 1;
-  transition: opacity 300ms ease-out;
-}
-
-main {
-  overflow-x: hidden;
-}
-
-.bcg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-
-/* Slide 1 */
-#slide-1 .bcg {
-  background-image: url("/assets/images/bcg_slide-1.jpg");
-}
-
-/* Slide 2 */
-#slide-2 .bcg {
-  background: none;
-  background-color: #010101;
-  height: 310px;
-  text-align: center;
-}
-
-/* Slide 3 */
-#slide-3 .bcg {
-  background-image: url("/assets/images/bcg_slide-3.jpg");
-}
-
-/* Slide 4 */
-.curtainContainer {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.curtainContainer .curtain {
-  width: 300%;
-  height: 1px;
-  background-color: #000000;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  opacity: 0;
-}
-
-.curtainContainer .copy {
-  position: absolute;
-  bottom: 30%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-#slide-4 .bcg {
-  background-image: url("/assets/images/bcg_slide-4.jpg");
-}
-
-/* Slide 5 */
-#slide-5 {
-  position: relative;
-}
-
-#slide-5 .bcg {
-  background-image: url("/assets/images/bcg_slide-5.jpg");
-}
-
-#slide-5 .bcg2 {
-  background-image: url("/assets/images/bcg_slide-5b.jpg");
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-#slide-5 .bcg3 {
-  background: none;
-  background-color: #010101;
-  z-index: 2;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 2;
-}
-
-.hsContainer {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.hsContent {
-  max-width: 450px;
-  margin: -150px auto 0 auto;
-  display: table-cell;
-  vertical-align: middle;
-  color: #ebebeb;
-  padding: 0 8%;
-  text-align: center;
-}
-
-.hsContent h2,
-.copy h2 {
-  color: #ffffff;
-  font-size: 45px;
-  line-height: 48px;
-  margin-bottom: 12px;
-}
-
-.hsContent p {
-  width: 400px;
-  margin: 0 auto;
-  color: #b2b2b2;
-}
-
-.hsContent a {
-  color: #b2b2b2;
-  text-decoration: underline;
-}
-
-.bgBlack {
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 3px 10px;
-}
-
-/** {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  text-align: center;
-  font-family: 'Klavika', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  background: #525964;
-  color: #fff;
-}
-
-h1 {
-  font-size: 315px;
-}
-*/
