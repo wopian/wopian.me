@@ -506,15 +506,10 @@
     }) : "undefined" != typeof module && module.exports ? module.exports = i : e.skrollr = i
 })(window, document);
 
-( function( $ ) {
-    // Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
-} )( jQuery );
+skrollr.init({
+    forceHeight: true,
+    smoothScrolling:true
+});
 
 /*Highcharts JS v4.0.4 (2014-09-02)
   (c) 2009-2014 Torstein Honsi
