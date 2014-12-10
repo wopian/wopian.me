@@ -22,7 +22,7 @@ module.exports = function(grunt) {
   grunt.initConfig(config);
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin', 'minjson']);
 
   //grunt.registerTask('build:dev', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
 
