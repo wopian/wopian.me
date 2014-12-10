@@ -4,7 +4,7 @@
 <head>
     <title>Wopian</title>
     <link href='//fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="/assets/css/main.min.css" rel="stylesheet">
+    <link href="/assets/css/app.min.css" rel="stylesheet">
 </head>
 
 <body id="skrollr-body">
