@@ -50,6 +50,10 @@ section * {
           align-self: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 h1, h2 {
   font-size: 3em;
   font-weight: 700;
@@ -57,10 +61,6 @@ h1, h2 {
 
 h1 {
   font-size: 4em;
-}
-
-ul {
-  list-style: none;
 }
 
 .big {
