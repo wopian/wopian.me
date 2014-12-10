@@ -5,8 +5,7 @@ module.exports = {
             collapseWhitespace: true
         },
         files: {
-            'production/index.php': 'index.php', // 'destination': 'source'
-            'production/year/index.html': 'year/index.html'
+            'production/index.php': 'index.php'// 'destination': 'source'
         }
     }
 }
