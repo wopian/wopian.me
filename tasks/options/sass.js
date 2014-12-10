@@ -5,8 +5,7 @@ module.exports = {
       style: 'expanded'
     },
     files: {
-      'assets/css/main.css': 'assets/sass/main.scss',
-      'assets/css/year.css': 'assets/sass/year.scss'
+      'assets/css/main.css': 'assets/sass/main.scss'
     }
   }
 }
