@@ -24,10 +24,10 @@ $username = filter_var($_POST['user_name'], FILTER_SANITIZE_STRING);
 	  $day = (int)date("j")-1;
 	  $payload = "Happy ".$holidays[$month][$day]."!";
 	}
-	
+
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'YizUvfE99BnhSgofKQXwCPt3',
+	  CURLOPT_URL => 'https://hooks.slack.com/services/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',
 	  CURLOPT_RETURNTRANSFER => 1,
 	  CURLOPT_POST => 1,
 	  CURLOPT_POSTFIELDS => array('payload' => '{"text": "'.$payload.'"}')
