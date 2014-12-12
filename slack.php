@@ -1,7 +1,6 @@
 <?php
 
 $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
-$channel = filter_var($_POST['channel_name'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   if ($type == '/wop') {
   	if ($username != 'Wopian') {
@@ -37,7 +36,7 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
 	  CURLOPT_URL => 'https://hooks.slack.com/services/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',
 	  CURLOPT_RETURNTRANSFER => 1,
 	  CURLOPT_POST => 1,
-	  CURLOPT_POSTFIELDS => array('payload' => '{"channel": "'.$channel.'", text": "'.$payload.'"}')
+	  CURLOPT_POSTFIELDS => array('payload' => '{text": "'.$payload.'"}')
 	));
 	curl_exec($curl);
 	curl_close($curl);
