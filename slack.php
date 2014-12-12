@@ -6,7 +6,7 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   	if ($username != 'Wopian') {
   		$users = array("Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound");
   		shuffle($users);
-  		$users_rnd = array_rand($users, 1);
+  		$users_rnd = $users[rand(0,6)];
 
   		if ($users_rnd == $username) {
   			$users_rnd = array_rand($users, 1);
@@ -30,7 +30,7 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   						"while being thrown into grinding gears and machinery",
   						"while having their brain removed"
   		);
-  		$payload = "$username attempted to do the wop ".array_rand($choice, 1).".";
+  		$payload = "$username attempted to do the wop $choice[rand(0,16)].";
   	} else {
     	$payload = "$username did the wop.";
 	}
