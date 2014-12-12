@@ -2,14 +2,13 @@
 
 $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
-  if ($type == '/wop') {
+  #if ($type == '/wop') {
   	if ($username != 'Wopian') {
   		function array_delete($array, $element) {
     		return array_diff($array, [$element]);
 		}
 		$users = array_diff(["Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound"], $username);
-
-  		shuffle($users);
+  		print_r($users);
   		$users_rnd = $users[rand(0,6)];
 
   		if ($users_rnd == $username) {
@@ -47,5 +46,5 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
 	));
 	curl_exec($curl);
 	curl_close($curl);
-  }
+  #}
 ?>
