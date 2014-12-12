@@ -1,7 +1,7 @@
 <?php
 
 $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
-$channel = filter_var($_POST['channel'], FILTER_SANITIZE_STRING);
+$channel = filter_var($_POST['channel_name'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   if ($type == '/wop') {
   	if ($username != 'Wopian') {
