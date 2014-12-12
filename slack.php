@@ -4,12 +4,16 @@ $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   if ($type == '/wop') {
   	if ($username != 'Wopian') {
-  		$users = array("Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound");
+  		function array_delete($array, $element) {
+    		return array_diff($array, [$element]);
+		}
+		$users = array_diff(["Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound"], $username);
+
   		shuffle($users);
   		$users_rnd = $users[rand(0,6)];
 
   		if ($users_rnd == $username) {
-  			$users_rnd = array_rand($users, 1);
+  			$users_rnd = $users[rand(0,6)];
   		}
 
   		$choice = array("as they were imploded by $users_rnd",
@@ -30,7 +34,7 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   						"while being thrown into grinding gears and machinery",
   						"while having their brain removed"
   		);
-  		$payload = "$username attempted to do the wop $choice[rand(0,16)].";
+  		$payload = "$username attempted to do the wop ".$choice[rand(0,16)].".";
   	} else {
     	$payload = "$username did the wop.";
 	}
