@@ -85,6 +85,18 @@
                             data-center="opacity:1"
                             data-top="opacity:0"></div>
     </section>-->
+    
+    <section id="three">
+        <div><div>
+            <img src="./jshint-400.png">
+            <p>Hummingbird Tools</p>
+        </div></div>
+        
+        <div><div>
+            <img src="./jshint-400.png">
+            <p>WhatPulse Stats</p>
+        </div></div>
+    </section>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/app.min.js"></script>
