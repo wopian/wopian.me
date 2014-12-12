@@ -1,5 +1,15 @@
 <?php
 
+function array_delete($array, $element) {
+    		return array_diff($array, [$element]);
+		}
+		$users = array_diff(["Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound"], 'Wopian');
+  		$users_rnd = $users[rand(0,6)];
+  		echo "<pre>";
+  		print_r($users);
+  		print_r($users_rnd);
+  		echo "</pre>";
+
 $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   #if ($type == '/wop') {
@@ -8,7 +18,6 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
     		return array_diff($array, [$element]);
 		}
 		$users = array_diff(["Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound"], $username);
-  		print_r($users);
   		$users_rnd = $users[rand(0,6)];
 
   		if ($users_rnd == $username) {
