@@ -3,7 +3,7 @@
 $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   if ($type == '/wop') {
-  	if ($username != 'wopian') {
+  	if ($username != 'Wopian') {
   		$payload = "$username attempted to do the wop.";
   	} else {
     	$payload = "$username did the wop.";
