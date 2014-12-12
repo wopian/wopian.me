@@ -4,9 +4,6 @@ $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   if ($type == '/wop') {
   	#if ($username != 'Wopian') {
-  		function array_delete($array, $element) {
-    		return array_diff($array, [$element]);
-		}
 		$users = array("Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound");
 		if(($key = array_search($username, $users)) !== false) {
     		unset($users[$key]);
