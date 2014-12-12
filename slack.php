@@ -3,13 +3,9 @@
 $type = filter_var($_POST['command'], FILTER_SANITIZE_STRING);
 $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   if ($type == '/wop') {
-  	#if ($username != 'Wopian') {
+  	if ($username != 'wopian') {
 		$users = array("Wopian", "Doramu", "Kusoneko", "Lewd", "Neelon", "Naru", "Cronhound");
-		if(($key = array_search($username, $users)) !== false) {
-    		unset($users[$key]);
-		}
-		shuffle($users);
-  		$users_rnd = $users[rand(0,5)];
+  		$users_rnd = $users[rand(0,6)];
 
   		$choice = array("as they were imploded by $users_rnd",
   						"while they were imploded by $users_rnd",
@@ -30,9 +26,9 @@ $username = ucfirst(filter_var($_POST['user_name'], FILTER_SANITIZE_STRING));
   						"while having their brain removed"
   		);
   		$payload = "$username attempted to do the wop ".$choice[rand(0,16)].".";
-  	#} else {
-    #	$payload = "$username did the wop.";
-	#}
+  	} else {
+    	$payload = "$username did the wop.";
+	}
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
 	  CURLOPT_URL => 'https://hooks.slack.com/services/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',
