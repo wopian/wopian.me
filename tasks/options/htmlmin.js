@@ -6,7 +6,8 @@ module.exports = {
         },
         files: {
             'production/index.php': 'index.php',
-            'production/slack.php': 'slack.php'
+            'production/slack.php': 'slack.php',
+            'production/hb.php': 'hb.php'
         }
     }
 }
