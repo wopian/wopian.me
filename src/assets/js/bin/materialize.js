@@ -3,6 +3,9 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+/* jshint ignore:start */
+
 // Check for jQuery.
 if (typeof(jQuery) === 'undefined') {
   var jQuery;
@@ -1930,7 +1933,7 @@ $(document).ready(function(){
         }
         else {
           // Insert as text;
-          toast.innerHTML = html; 
+          toast.innerHTML = html;
         }
         // Bind hammer
         var hammerHandler = new Hammer(toast, {prevent_default: false});
@@ -2239,7 +2242,7 @@ $(document).ready(function(){
               $('body').css('overflow', 'hidden');
               // Push current drag target on top of DOM tree
               $('body').append(dragTarget);
-              
+
               if (options.edge === 'left') {
                 dragTarget.css({width: '50%', right: 0, left: ''});
                 menu_id.velocity({left: 0}, {duration: 300, queue: false, easing: 'easeOutQuad'});
@@ -2480,9 +2483,9 @@ $(document).ready(function(){
 		    var offset = $(this.hash).offset().top + 1;
 
 //          offset - 200 allows elements near bottom of page to scroll
-			
+
 	    	$('html, body').animate({ scrollTop: offset - 200 }, {duration: 400, queue: false, easing: 'easeOutCubic'});
-			
+
 		  });
 		});
 		options = options || {
@@ -6828,3 +6831,5 @@ Picker.extend( 'pickadate', DatePicker )
       }
     }; // Plugin end
 }( jQuery ));
+
+/* jshint ignore:end */

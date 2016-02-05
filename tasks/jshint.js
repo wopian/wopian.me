@@ -5,6 +5,5 @@ module.exports = {
             jQuery: true
         },
     },
-    ignores: ['src/assets/js/bin/materialize.js'],
     beforeconcat: ['src/assets/js/*.js']
 }
