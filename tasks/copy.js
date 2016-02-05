@@ -4,7 +4,7 @@ module.exports = {
             //Root of source -> Root of domain
             expand: true,
             cwd: 'src/',
-            src: ['.htaccess', 'robots.txt', 'index.php'],
+            src: ['index.html'],
             dest: 'dist/'
         },
         {

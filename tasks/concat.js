@@ -4,7 +4,10 @@ module.exports = {
     },
     dist: {
         files: {
-            'dist/assets/js/app.js' : ['src/assets/js/vendor/jquery.js', 'src/assets/js/vendor/jquery.lazyload.min.js', 'src/assets/js/vendor/holder.js', 'src/assets/js/app.js']
+            'dist/assets/js/app.js' : [
+                'src/assets/js/bin/materialize.js',
+                'src/assets/js/bin/init.js'
+            ]
         }
     }
 }
