@@ -9,6 +9,12 @@ module.exports = {
         },
         {
             expand: true,
+            cwd: 'src/assets/fonts/',
+            src: ['**'],
+            dest: 'dist/assets/fonts/'
+        },
+        {
+            expand: true,
             cwd: 'src/assets/php/',
             src: ['**'],
             dest: 'dist/assets/php/'
