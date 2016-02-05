@@ -1,0 +1,44 @@
+{
+  "name": "wopian.me",
+  "version": "0.0.1",
+  "description": "Personal homepage of wopian",
+  "author": "James Harris",
+  "license": "Apache-2.0",
+  "private": true,
+  "contributors": [
+    {
+      "name" : "James Harris",
+      "email" : "wopiancitizen123@gmail.com",
+      "url" : "https://wopian.me"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "homepage": "https://wopian.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wopian/wopian.me"
+  },
+  "bugs": {
+    "url": "https://github.com/wopian/wopian.me/issues"
+  },
+  "devDependencies": {
+    "glob": "^4.3.1",
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "^3.3.0",
+    "grunt-timer": "^0.6.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.5.0",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.3",
+    "phplint": "^1.7.0"
+  },
+  "scripts": {
+    "pretest": "phplint 'src/**/*php'",
+    "test": "grunt"
+  }
+}

@@ -1,0 +1,26 @@
+language: php
+
+cache:
+  directories:
+    - node_modules
+    - tasks
+
+node_js:
+  - 0.12
+
+php:
+  - 5.4.45
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - travis_retry npm install -g grunt-cli
+  - travis_retry gem install sass
+
+install: travis_retry npm install --save-dev
+
+before_script: phplint 'src/**/*php'
+
+script: grunt
+
