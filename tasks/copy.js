@@ -9,9 +9,9 @@ module.exports = {
         },
         {
             expand: true,
-            cwd: 'src/assets/fonts/',
+            cwd: 'src/assets/font/',
             src: ['**'],
-            dest: 'dist/assets/fonts/'
+            dest: 'dist/assets/font/'
         },
         {
             expand: true,
