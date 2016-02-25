@@ -5,8 +5,7 @@ module.exports = {
             style: 'compressed',
         },
         files: {
-            'src/assets/css/materialize.css': 'src/assets/scss/materialize.scss',
-            'src/assets/css/style.css': 'src/assets/scss/style.scss'
+            'src/assets/css/materialize.css': 'src/assets/scss/base.scss'
         }
     }
 }
