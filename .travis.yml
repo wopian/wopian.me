@@ -5,6 +5,8 @@ cache:
     - node_modules
     - tasks
 
+sudo: false
+
 node_js:
   - 0.12
 
