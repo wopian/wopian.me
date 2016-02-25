@@ -8,7 +8,7 @@ cache:
 sudo: false
 
 node_js:
-  - 0.12
+  - iojs
 
 php:
   - 5.4.45
