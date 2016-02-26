@@ -1,9 +1,5 @@
 .fullscreen-banner {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  margin-top: 10vh;
 
   .section {
     padding-top: 0;
@@ -19,9 +15,18 @@
   }
 }
 
-.header {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   color: $primary-color;
 }
+
+h3 {
+    font-size: 20px;
+  }
 
 .container {
   max-width: 500px;
