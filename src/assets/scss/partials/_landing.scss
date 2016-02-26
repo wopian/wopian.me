@@ -37,6 +37,7 @@ h3 {
 
 .border {
   border: 3px solid $primary-color;
+  margin-top: 10vh;
 }
 
 .header-window {
@@ -58,8 +59,4 @@ h3 {
 p,
 a {
   font-size: 10px;
-}
-
-a {
-  border: 3px solid $primary-color;
 }
