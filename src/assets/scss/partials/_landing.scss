@@ -1,17 +1,17 @@
 .fullscreen-banner {
   margin-top: 25vh;
   .section { padding-top: 0; }
-  h6 { font-size: 10.7px }
+  // h6 { font-size: 10.7px }
 
   h1 {
     font-size: 2.65rem;
-    margin-bottom: 0;
+    margin: 0 0 16px;
   }
 
-  .row {
-    display: relative;
+  /*.row {
+    position: relative;
     right: 2px;
-  }
+  } */
 }
 
 p,
