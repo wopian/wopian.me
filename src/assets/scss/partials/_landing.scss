@@ -61,7 +61,13 @@ a {
   font-size: 10px;
 }
 
-::selection,
-::-moz-selection {
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+.header::selection,
+p::selection {
   background: $primary-color;
 }
