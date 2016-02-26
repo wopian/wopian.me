@@ -49,10 +49,18 @@ h3 {
 
 .projects {
   padding: 10px;
+
+  h3:not(:first-of-type) {
+    margin-top: 16px;
+  }
 }
 
 p,
 a {
   font-size: 10px;
   margin: 0;
+}
+
+a {
+  margin-bottom: 16px;
 }
