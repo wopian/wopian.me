@@ -8,7 +8,7 @@ cache:
 sudo: false
 
 node_js:
-  - iojs
+  - node
 
 php:
   - 5.4.45
@@ -17,6 +17,7 @@ matrix:
   fast_finish: true
 
 before_install:
+  - npm update && npm prune && npm dedupe
   - travis_retry npm install -g grunt-cli
   - travis_retry gem install sass
 
