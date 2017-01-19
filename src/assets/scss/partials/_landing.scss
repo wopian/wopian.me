@@ -26,7 +26,26 @@ h6,
 h3 {
     font-size: 16px;
     margin: 0;
+  
+  span {
+    background: #e91e63;
+    color: #000;
+    padding: 0 6px;
+    border-radius: 1px;
+    font-size: .5rem;
+    float: right;
+
+    &:before,
+    &:after {
+      content:"";
+      display:table;
+    }
+ 
+    &:after {
+      clear:both;
+    }
   }
+}
 
 .container { max-width: 500px; }
 
