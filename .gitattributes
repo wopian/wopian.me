@@ -1,3 +1,0 @@
-src/assets/js/vendor/* linguist-vendored
-src/assets/scss/materialize.scss linguist-vendored
-src/assets/scss/components/**/*.scss linguist-vendored
