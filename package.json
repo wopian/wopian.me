@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "babel-node --presets env,stage-0 build/dev-server",
     "build": "babel-node --presets env,stage-0 build/build",
-    "test": ""
+    "test": " "
   },
   "contributors": [
     {
