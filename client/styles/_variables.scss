@@ -1,0 +1,8 @@
+$width: 480px;
+
+// Named columns hack for outdated SCSS engine
+$grid-columns: '[full-start] minmax(1em, 1fr) [main-start] minmax(0, 480px) [main-end] minmax(1em, 1fr) [full-end]';
+
+$background: #0f1021;
+$foreground: #ffcee4;
+$accent: #d01257;
