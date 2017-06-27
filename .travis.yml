@@ -1,19 +1,17 @@
-os:
-- linux
-- osx
+os: linux
 language: node_js
-node_js:
-- node
-- 7
-- 6
+node_js: node
 cache:
   yarn: true
 sudo: false
 matrix:
   fast_finish: true
 install:
-- travis_retry yarn install
+- travis_retry yarn install --production
 script:
-- yarn test
-notifications:
-  email: false
+- yarn run build
+after_success:
+- if [ ${TRAVIS_PULL_REQUEST} = "false" ];
+  then bash deploy.sh;
+  else echo "Nothing to deploy";
+  fi
