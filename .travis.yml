@@ -15,3 +15,5 @@ after_success:
   then bash deploy.sh;
   else echo "Nothing to deploy";
   fi
+notifications:
+  email: false
