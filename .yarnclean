@@ -3,6 +3,7 @@ __tests__
 test
 tests
 powered-test
+benchmarks
 
 # asset directories
 docs
@@ -34,6 +35,18 @@ Gruntfile.js
 .flowconfig
 .documentup.json
 .yarn-metadata.json
+.travis.yml
+appveyor.yml
+.appveyor.yml
+
+# meta
+changelog*
+Changelog*
+CHANGELOG*
+license*
+License*
+LICENSE*
+AUTHORS*
 
 # misc
 *.gz
