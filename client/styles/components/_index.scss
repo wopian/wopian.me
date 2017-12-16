@@ -27,6 +27,7 @@ svg, path {
   height: 1rem;
   width: 1rem;
   fill: $foreground;
+  transition: fill .2s cubic-bezier(0,0,0.3,1)
 }
 
 .top {
@@ -53,6 +54,12 @@ svg, path {
   a {
     margin: 0 .2rem;
     text-decoration: none;
+    &:hover {
+      svg, path {
+        fill: $accent;
+        transition: fill .2s cubic-bezier(0,0,0.3,1)
+      }
+    }
   }
 
   a, svg, path {
