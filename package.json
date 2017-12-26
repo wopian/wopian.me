@@ -30,18 +30,18 @@
   },
   "dependencies": {
     "autoprefixer": "~7.2.0",
-    "cpy-cli": "^1.0.1",
-    "cssnano-cli": "^1.0.5",
+    "cpy-cli": "~1.0.1",
+    "cssnano-cli": "~1.0.5",
     "node-sass": "~4.7.1",
-    "node-sass-import": "^1.1.1",
-    "npm-run-all": "^4.0.2",
+    "node-sass-import": "~1.1.1",
+    "npm-run-all": "~4.0.2",
     "pug": "~2.0.0-rc.2",
     "pug-cli": "~1.0.0-alpha6",
     "sanitize.css": "~5.0.0"
   },
   "devDependencies": {
-    "budo": "^10.0.3",
-    "sass-lint": "^1.10.2"
+    "budo": "~10.0.3",
+    "sass-lint": "~1.10.2"
   },
   "renovate": {
     "extends": [
