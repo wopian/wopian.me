@@ -34,7 +34,7 @@
     "cssnano-cli": "~1.0.5",
     "node-sass": "~4.7.1",
     "node-sass-import": "~1.1.1",
-    "npm-run-all": "~4.0.2",
+    "npm-run-all": "~4.1.0",
     "pug": "~2.0.0-rc.2",
     "pug-cli": "~1.0.0-alpha6",
     "sanitize.css": "~5.0.0"
