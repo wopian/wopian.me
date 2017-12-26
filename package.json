@@ -59,29 +59,9 @@
       ":ignoreUnstable",
       ":updateNotScheduled",
       ":label(dependencies)",
-      ":timezone(Europe/London)",
-      "group:babelMonorepo",
-      "group:jestMonorepo",
-      "group:linters",
-      "group:reactMonorepo",
-      "group:storybookMonorepo",
-      "schedule:weekly"
+      ":timezone(Europe/London)"
     ],
     "prTitle": "update {{depName}} to {{newVersion}}",
-    "commitMessage": "update {{depName}} to {{newVersion}}",
-    "packageRules": [
-      {
-        "packagePatterns": [
-          "^node-sass"
-        ],
-        "groupName": "node-sass"
-      },
-      {
-        "packagePatterns": [
-          "^pug"
-        ],
-        "groupName": "pug"
-      }
-    ]
+    "commitMessage": "update {{depName}} to {{newVersion}}"
   }
 }
