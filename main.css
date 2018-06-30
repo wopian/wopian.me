@@ -1,21 +1,21 @@
-/*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
-/* Document (https://html.spec.whatwg.org/multipage/semantics.html#semantics)
-   ========================================================================== */
+/*! sanitize.css v6.0.0 | CC0 License | github.com/csstools/sanitize.css */
+/* Document
+ * ========================================================================== */
 /**
  * 1. Remove repeating backgrounds in all browsers (opinionated).
- * 2. Add box sizing inheritence in all browsers (opinionated).
+ * 2. Add border box sizing in all browsers (opinionated).
  */
 *,
 ::before,
 ::after {
   background-repeat: no-repeat;
   /* 1 */
-  box-sizing: inherit;
+  box-sizing: border-box;
   /* 2 */ }
 
 /**
  * 1. Add text decoration inheritance in all browsers (opinionated).
- * 2. Add vertical alignment inheritence in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
  */
 ::before,
 ::after {
@@ -25,33 +25,26 @@
   /* 2 */ }
 
 /**
- * 1. Add border box sizing in all browsers (opinionated).
+ * 1. Correct the line height in all browsers.
  * 2. Add the default cursor in all browsers (opinionated).
- * 3. Prevent font size adjustments after orientation changes in IE and iOS.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ * 4. Breaks words to prevent prevent overflow in all browsers (opinionated).
  */
 html {
-  box-sizing: border-box;
+  line-height: 1.15;
   /* 1 */
   cursor: default;
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 3 */
+  word-break: break-word;
+  /* 4 */ }
 
-/* Sections (https://html.spec.whatwg.org/multipage/semantics.html#sections)
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block; }
-
+/* Sections
+ * ========================================================================== */
 /**
  * Remove the margin in all browsers (opinionated).
  */
@@ -64,26 +57,10 @@ body {
  */
 h1 {
   font-size: 2em;
-  margin: .67em 0; }
+  margin: 0.67em 0; }
 
-/* Grouping content (https://html.spec.whatwg.org/multipage/semantics.html#grouping-content)
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block; }
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-  margin: 1em 40px; }
-
+/* Grouping content
+ * ========================================================================== */
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -95,6 +72,12 @@ hr {
   /* 1 */
   overflow: visible;
   /* 2 */ }
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block; }
 
 /**
  * Remove the list style on navigation lists in all browsers (opinionated).
@@ -113,36 +96,20 @@ pre {
   font-size: 1em;
   /* 2 */ }
 
-/* Text-level semantics (https://html.spec.whatwg.org/multipage/semantics.html#text-level-semantics)
-   ========================================================================== */
+/* Text-level semantics
+ * ========================================================================== */
 /**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  background-color: transparent; }
 
 /**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * Add the correct text decoration in Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
   text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-  font-weight: inherit; }
+  text-decoration: underline dotted; }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -164,61 +131,32 @@ samp {
   /* 2 */ }
 
 /**
- * Add the correct font style in Android 4.3-.
- */
-dfn {
-  font-style: italic; }
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-  background-color: #ffff00;
-  color: #000000; }
-
-/**
  * Add the correct font size in all browsers.
  */
 small {
   font-size: 80%; }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -.25em; }
-
-sup {
-  top: -.5em; }
-
 /*
- * Remove the text shadow on text selections (opinionated).
- * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ * Remove the text shadow on text selections in Firefox 61- (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow
+ *    in all browsers (opinionated).
  */
 ::-moz-selection {
   background-color: #b3d4fc;
   /* 1 */
-  color: #000000;
+  color: #000;
   /* 1 */
   text-shadow: none; }
 
 ::selection {
   background-color: #b3d4fc;
   /* 1 */
-  color: #000000;
+  color: #000;
   /* 1 */
   text-shadow: none; }
 
-/* Embedded content (https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
-   ========================================================================== */
+/* Embedded content
+ * ========================================================================== */
 /*
  * Change the alignment on media elements in all browers (opinionated).
  */
@@ -262,16 +200,16 @@ svg {
 svg:not(:root) {
   overflow: hidden; }
 
-/* Tabular data (https://html.spec.whatwg.org/multipage/tables.html#tables)
-   ========================================================================== */
+/* Tabular data
+ * ========================================================================== */
 /**
- * Collapse border spacing
+ * Collapse border spacing in all browsers (opinionated).
  */
 table {
   border-collapse: collapse; }
 
-/* Forms (https://html.spec.whatwg.org/multipage/forms.html#forms)
-   ========================================================================== */
+/* Forms
+ * ========================================================================== */
 /**
  * Remove the margin in Firefox and Safari.
  */
@@ -289,59 +227,56 @@ button,
 input,
 select,
 textarea {
-  background-color: transparent;
-  color: inherit;
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge, Firefox, and IE.
  */
-button,
-input {
+button {
+  overflow: visible;
   /* 1 */
-  overflow: visible; }
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+  text-transform: none;
   /* 2 */ }
 
 /**
- * Remove the inner border and padding in Firefox.
+ * Correct the inability to style clickable types in iOS and Safari.
  */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restore the focus styles unset by the previous rule in Firefox.
  */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * Show the overflow in Edge and IE.
+ */
+input {
+  overflow: visible; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -364,7 +299,7 @@ legend {
   /* 1 */ }
 
 /**
- * 1. Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge and IE.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
@@ -372,6 +307,12 @@ progress {
   /* 1 */
   vertical-align: baseline;
   /* 2 */ }
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+select {
+  text-transform: none; }
 
 /**
  * 1. Remove the default vertical scrollbar in IE.
@@ -397,8 +338,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -412,10 +353,9 @@ textarea {
   /* 2 */ }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -428,15 +368,36 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* Interactive elements (https://html.spec.whatwg.org/multipage/forms.html#interactive-elements)
-   ========================================================================== */
+/* Interactive
+ * ========================================================================== */
 /*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
+ * Add the correct display in Edge and IE.
  */
-details,
-menu {
+details {
   display: block; }
+
+/*
+ * Add the correct styles in Edge, IE, and Safari.
+ */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content; }
+
+dialog:not([open]) {
+  display: none; }
 
 /*
  * Add the correct display in all browsers.
@@ -444,8 +405,8 @@ menu {
 summary {
   display: list-item; }
 
-/* Scripting (https://html.spec.whatwg.org/multipage/scripting.html#scripting-3)
-   ========================================================================== */
+/* Scripting
+ * ========================================================================== */
 /**
  * Add the correct display in IE 9-.
  */
@@ -458,11 +419,11 @@ canvas {
 template {
   display: none; }
 
-/* User interaction (https://html.spec.whatwg.org/multipage/interaction.html#editing)
-   ========================================================================== */
+/* User interaction
+ * ========================================================================== */
 /*
- * Remove the tapping delay on clickable elements (opinionated).
- * 1. Remove the tapping delay in IE 10.
+ * 1. Remove the tapping delay on clickable elements in all browsers (opinionated).
+ * 2. Remove the tapping delay in IE 10.
  */
 a,
 area,
@@ -475,7 +436,8 @@ textarea,
 [tabindex] {
   -ms-touch-action: manipulation;
   /* 1 */
-  touch-action: manipulation; }
+  touch-action: manipulation;
+  /* 2 */ }
 
 /**
  * Add the correct display in IE 10-.
@@ -483,34 +445,36 @@ textarea,
 [hidden] {
   display: none; }
 
-/* ARIA (https://w3c.github.io/html-aria/)
-   ========================================================================== */
+/* Accessibility
+ * ========================================================================== */
 /**
- * Change the cursor on busy elements (opinionated).
+ * Change the cursor on busy elements in all browsers (opinionated).
  */
 [aria-busy="true"] {
   cursor: progress; }
 
 /*
- * Change the cursor on control elements (opinionated).
+ * Change the cursor on control elements in all browsers (opinionated).
  */
 [aria-controls] {
   cursor: pointer; }
 
 /*
- * Change the display on visually hidden accessible elements (opinionated).
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+[aria-disabled],
+[disabled] {
+  cursor: disabled; }
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
  */
 [aria-hidden="false"][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   display: inherit;
   position: absolute; }
-
-/*
- * Change the cursor on disabled, not-editable, or otherwise
- * inoperable elements (opinionated).
- */
-[aria-disabled] {
-  cursor: default; }
 
 body {
   font-family: 'Fira Mono', monospace;
