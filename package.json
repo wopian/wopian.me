@@ -37,7 +37,7 @@
     "npm-run-all": "~4.1.0",
     "pug": "~2.0.0-rc.2",
     "pug-cli": "~1.0.0-alpha6",
-    "sanitize.css": "~5.0.0"
+    "sanitize.css": "~6.0.0"
   },
   "devDependencies": {
     "budo": "~11.3.0",
