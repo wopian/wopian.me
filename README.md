@@ -8,19 +8,16 @@
 [![donate badge]][donate]
 
 [web]:https://wopian.me
-[web badge]:https://img.shields.io/website-up-down-green-red/https/wopian.me.svg?style=flat-square
-[uptime badge]:https://img.shields.io/uptimerobot/ratio/7/m779134093-6b18c63b2a1d76c408678c30.svg?style=flat-square
-
-[commit]:https://github.com/wopian/wopian.me/commits/master
-[commit badge]:https://img.shields.io/github/last-commit/wopian/wopian.me/new.svg?style=flat-square
+[web badge]:https://flat.badgen.net/uptime-robot/status/m779134093-6b18c63b2a1d76c408678c30
+[uptime badge]:https://flat.badgen.net/uptime-robot/month/m779134093-6b18c63b2a1d76c408678c30
 
 [david]:https://david-dm.org/wopian/wopian.me
-[david badge]:https://img.shields.io/david/wopian/wopian.me.svg?style=flat-square
+[david badge]:https://flat.badgen.net/david/dep/wopian/wopian.me
 [david dev]:https://david-dm.org/wopian/wopian.me?type=dev
-[david dev badge]:https://img.shields.io/david/dev/wopian/wopian.me.svg?style=flat-square
+[david dev badge]:https://flat.badgen.net/david/dev/wopian/wopian.me
 
 [travis]:https://travis-ci.org/wopian/hibari
-[travis badge]:https://img.shields.io/travis/wopian/hibari/new.svg?style=flat-square
+[travis badge]:https://flat.badgen.net/travis/wopian/wopian.me
 
 [donate]:https://paypal.me/wopian
-[donate badge]:https://img.shields.io/badge/support%20me%20on-paypal.me-ff69b4.svg?style=flat-square
+[donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
