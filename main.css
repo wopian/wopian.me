@@ -25,23 +25,29 @@
   /* 2 */ }
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Add the default cursor in all browsers (opinionated).
- * 3. Prevent adjustments of font size after orientation changes in
+ * 1. Use the default user interface font in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Use the default cursor in all browsers (opinionated).
+ * 4. Use a 4-space tab width in all browsers (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
- * 4. Breaks words to prevent prevent overflow in all browsers (opinionated).
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
  */
 html {
-  line-height: 1.15;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 1 */
-  cursor: default;
+  line-height: 1.15;
   /* 2 */
+  cursor: default;
+  /* 3 */
+  tab-size: 4;
+  /* 4 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
+  /* 5 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */
+  /* 5 */
   word-break: break-word;
-  /* 4 */ }
+  /* 6 */ }
 
 /* Sections
  * ========================================================================== */
@@ -62,12 +68,10 @@ h1 {
 /* Grouping content
  * ========================================================================== */
 /**
- * 1. Add the correct box sizing in Firefox.
+ * 1. Add the correct sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
@@ -87,11 +91,12 @@ nav ul {
   list-style: none; }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 1. Use the default monospace user interface font
+ *    in all browsers (opinionated).
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -119,13 +124,14 @@ strong {
   font-weight: bolder; }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 1. Use the default monospace user interface font
+ *    in all browsers (opinionated).
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -211,13 +217,11 @@ table {
 /* Forms
  * ========================================================================== */
 /**
- * Remove the margin in Firefox and Safari.
+ * Remove the margin in Safari.
  */
 button,
 input,
-optgroup,
-select,
-textarea {
+select {
   margin: 0; }
 
 /**
@@ -251,22 +255,6 @@ button,
   -webkit-appearance: button; }
 
 /**
- * Restore the focus styles unset by the previous rule in Firefox.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
  * Correct the padding in Firefox.
  */
 fieldset {
@@ -281,20 +269,14 @@ input {
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
   color: inherit;
   /* 2 */
   display: table;
   /* 1 */
   max-width: 100%;
   /* 1 */
-  padding: 0;
-  /* 3 */
   white-space: normal;
   /* 1 */ }
 
@@ -315,28 +297,27 @@ select {
   text-transform: none; }
 
 /**
- * 1. Remove the default vertical scrollbar in IE.
- * 2. Change the resize direction on textareas in all browsers (opinionated).
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction on textareas in all browsers (opinionated).
  */
 textarea {
-  overflow: auto;
+  margin: 0;
   /* 1 */
+  overflow: auto;
+  /* 2 */
   resize: vertical;
-  /* 2 */ }
+  /* 3 */ }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
+ * Remove the padding in IE 10-.
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
+  padding: 0; }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
+ * Correct the cursor style of increment and decrement buttons in Safari.
  */
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
@@ -351,6 +332,13 @@ textarea {
   /* 1 */
   outline-offset: -2px;
   /* 2 */ }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
@@ -422,7 +410,8 @@ template {
 /* User interaction
  * ========================================================================== */
 /*
- * 1. Remove the tapping delay on clickable elements in all browsers (opinionated).
+ * 1. Remove the tapping delay on clickable elements
+      in all browsers (opinionated).
  * 2. Remove the tapping delay in IE 10.
  */
 a,
