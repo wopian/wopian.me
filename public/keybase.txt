@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/wopian
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wopian.me
+  * I am wopian (https://keybase.io/wopian) on keybase.
+  * I have a public key ASCBZgcFPWbLyvrJ4fiR2tJTkf5wIsy2uXQfzoYtenhYCwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201b3e1d36cf48861ba5656be67ca162441907033ea26adaa9b0eb07a974c000b50a",
+      "host": "keybase.io",
+      "kid": "0120816607053d66cbcafac9e1f891dad25391fe7022ccb6b9741fce862d7a78580b0a",
+      "uid": "f0f8d577fd08354f47b9d8b3ddf1de19",
+      "username": "wopian"
+    },
+    "merkle_root": {
+      "ctime": 1536158780,
+      "hash": "ea589d68e9043dd4fcd84f304aa0790ba5196185f7b688e6bb6b411e0d40826b3f2846c8cefccb02d40faeb307d5a635f161be2d2a1c8772d633ce8543224c9c",
+      "hash_meta": "1526834d1ff2591a11164265eb15e2b91cc760b8c09de52695d69b67c95930d3",
+      "seqno": 3566440
+    },
+    "service": {
+      "entropy": "+yEuwl32G7K6PqVR8JC3soJg",
+      "hostname": "wopian.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.5.2"
+  },
+  "ctime": 1536158790,
+  "expire_in": 504576000,
+  "prev": "95e401f2b48898562311289185287ebc47b1a6288dd4b8554a8726c344ccbd19",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEggWYHBT1my8r6yeH4kdrSU5H+cCLMtrl0H86GLXp4WAsKp3BheWxvYWTESpcCEcQgleQB8rSImFYjESiRhSh+vEexpiiN1LhVSocmw0TMvRnEILSOzPKMb/Z4zgUO2qY5Tox9ddm+UI9hTK0DYpAM+IWkAgHCo3NpZ8RAJhKREYdA4jE4PZnByUXSszsNl3p+CSb9gIeGst49Ak8fx3l29+z3cQ5k57Kp21zHb/vAByzpG9JHmhW/pG0kBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEII9mh4rC4XC7BQHuuh7FbLIt7mN7geTN8hZakOl2P6dyo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wopian
+
+==================================================================

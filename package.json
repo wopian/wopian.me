@@ -7,9 +7,9 @@
   "private": true,
   "scripts": {
     "start": "budo -d dist -l -H localhost",
-    "build": "run-p pug styles images && yarn run styles:compress",
+    "build": "run-p pug styles public && yarn run styles:compress",
     "pug": "pug client/index.pug -o dist",
-    "images": "cpy client/images/**.* dist",
+    "public": "cpy public/**.* dist",
     "styles": "node-sass client/styles -o dist --importer node_modules/node-sass-import",
     "styles:compress": "cssnano dist/main.css dist/main.min.css"
   },
