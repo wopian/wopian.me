@@ -552,9 +552,9 @@ browserslist@^4.1.0:
     electron-to-chromium "^1.3.62"
     node-releases "^1.0.0-alpha.11"
 
-budo@~11.3.0:
-  version "11.3.2"
-  resolved "https://registry.yarnpkg.com/budo/-/budo-11.3.2.tgz#ab943492cadbb0abaf9126b4c8c94eac2440adae"
+budo@~11.4.0:
+  version "11.4.1"
+  resolved "https://registry.yarnpkg.com/budo/-/budo-11.4.1.tgz#e69185ec343051d9055af3880e3085d497041edb"
   dependencies:
     bole "^2.0.0"
     browserify "^16.1.0"
