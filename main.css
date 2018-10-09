@@ -36,7 +36,7 @@
 html {
   cursor: default;
   /* 1 */
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 2 */
   line-height: 1.15;
   /* 3 */
@@ -98,7 +98,7 @@ nav ul {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -133,7 +133,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -199,7 +199,7 @@ img {
 /**
  * Change the fill color to match the text color in all browsers (opinionated).
  */
-svg {
+svg:not([fill]) {
   fill: currentColor; }
 
 /**
@@ -425,9 +425,9 @@ template {
 /* User interaction
  * ========================================================================== */
 /*
- * 1. Remove the tapping delay on clickable elements
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
       in all browsers (opinionated).
- * 2. Remove the tapping delay in IE 10.
  */
 a,
 area,
@@ -467,7 +467,7 @@ textarea,
  * Change the cursor on disabled, not-editable, or otherwise
  * inoperable elements in all browsers (opinionated).
  */
-[aria-disabled],
+[aria-disabled="true"],
 [disabled] {
   cursor: not-allowed; }
 
