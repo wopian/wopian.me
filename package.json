@@ -32,7 +32,7 @@
     "autoprefixer": "~9.4.0",
     "cpy-cli": "~2.0.0",
     "cssnano-cli": "~1.0.5",
-    "node-sass": "~4.10.0",
+    "node-sass": "~4.11.0",
     "node-sass-import": "~2.0.0",
     "npm-run-all": "~4.1.0",
     "pug": "~2.0.0-rc.2",
