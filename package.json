@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "budo": "~11.6.0",
-    "sass-lint": "~1.12.0"
+    "sass-lint": "~1.13.0"
   },
   "renovate": {
     "extends": [
