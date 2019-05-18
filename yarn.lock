@@ -4079,9 +4079,9 @@ safe-regex@^1.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-sanitize.css@~8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-8.0.0.tgz#b025845b772a2c0c996e62e3b2d1bbf10ca78e37"
+sanitize.css@~9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-9.0.0.tgz#265046e3e680b499ae8b349811875688d0fce84a"
 
 sass-graph@^2.2.4:
   version "2.2.4"
