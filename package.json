@@ -29,7 +29,7 @@
     "url": "https://github.com/wopian/wopian.me/issues"
   },
   "dependencies": {
-    "autoprefixer": "~9.6.0",
+    "autoprefixer": "~9.7.0",
     "cpy-cli": "~2.0.0",
     "cssnano-cli": "~1.0.5",
     "node-sass": "~4.13.0",
