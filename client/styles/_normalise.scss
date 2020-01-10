@@ -1,0 +1,10 @@
+// modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize
+// Modified to include only fixes needed
+
+// Use a better box model (opinionated).
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
