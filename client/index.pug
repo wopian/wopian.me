@@ -1,7 +1,12 @@
 doctype html
-html
+html(lang='en')
     head
         include components/head
     body
+      main
         include components/top
         include components/projects
+      script.
+         "serviceWorker"in navigator&&window.addEventListener("load",()=>{
+           navigator.serviceWorker.register("/sw.js")
+           })
