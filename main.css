@@ -47,10 +47,10 @@ svg, path {
   font-weight: 700; }
 
 .language {
-  color: #d01257;
   text-transform: uppercase;
-  font-size: .75rem;
-  margin-bottom: -.5rem; }
+  font-size: .8rem;
+  margin-bottom: -.5rem;
+  font-weight: 700; }
 
 .summary {
   line-height: 1.5;
