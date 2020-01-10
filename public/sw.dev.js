@@ -6,7 +6,9 @@ if (workbox) {
   workbox.routing.registerRoute(
     /\.(?:js|css|html)$/,
     /^https:\/\/wopian\.me\/\.index\.html$/,
-    new workbox.strategies.StaleWhileRevalidate()
+    new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'content',
+    })
   );
 
    // Cache the Google Fonts stylesheets with a stale while revalidate strategy.
@@ -37,7 +39,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   /\.(?:png|svg|xml|ico|json)$/,
   new workbox.strategies.CacheFirst({
-    cacheName: 'public',
+    cacheName: 'icons',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 60,
