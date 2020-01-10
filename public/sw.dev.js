@@ -5,7 +5,7 @@ if (workbox) {
 
   workbox.routing.registerRoute(
     /\.(?:js|css|html)$/,
-    /\.index.html$/,
+    /^https:\/\/wopian\.me\/\.index\.html$/,
     new workbox.strategies.StaleWhileRevalidate()
   );
 
