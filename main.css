@@ -31,8 +31,6 @@ svg, path {
   .top p span {
     display: block;
     color: #d01257; }
-  .top p:last-of-type {
-    color: #d01257; }
   .top a {
     margin: 0 .5rem;
     text-decoration: none; }
@@ -57,7 +55,8 @@ svg, path {
   margin: -.25rem 0 -.5rem; }
   .summary a {
     text-decoration: none;
-    color: #d01257; }
+    color: #fff;
+    border-bottom: 1px solid #d01257; }
 
 .project {
   margin-bottom: 8rem; }
