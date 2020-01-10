@@ -2,9 +2,6 @@
 // Modified to include only fixes needed
 
 // Use a better box model (opinionated).
-* {
+*,:after,:before {
   box-sizing: border-box;
-  &::before, &::after {
-    box-sizing: border-box;
-  }
 }

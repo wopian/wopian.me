@@ -1,17 +1,11 @@
 body {
-  font-family: 'Fira Mono', monospace;
-  font-size: 16px;
-  line-height: 1rem;
   color: $foreground;
   background: $background;
-  margin: 0;
-  padding: 0;
-  font-feature-settings: 'kern', 'liga';
   text-align: center;
-  -webkit-text-size-adjust: 100%;
+  font: 16px/1rem 'Fira Mono', monospace;
 }
 
-p {
+body, p {
   margin: 0;
 }
 
@@ -25,15 +19,13 @@ section {
 }
 
 svg, path {
-  height: 1rem;
-  width: 1rem;
   fill: $foreground;
   transition: fill .2s cubic-bezier(0,0,0.3,1)
 }
 
 .top {
   margin-top: calc(50vh - 5rem);
-  margin-bottom: calc(50vh - 17rem);
+  margin-bottom: calc(50vh - 17.5rem);
   p {
     &:first-of-type {
       font-size: 4rem;
@@ -47,13 +39,12 @@ svg, path {
     }
 
     &:last-of-type {
-      margin-top: -.5rem;
       color: $accent;
     }
   }
 
   a {
-    margin: 0 .2rem;
+    margin: 0 .5rem;
     text-decoration: none;
     &:hover {
       svg, path {
@@ -64,21 +55,18 @@ svg, path {
   }
 
   a, svg, path {
-    height: 2rem;
     width: 2rem;
   }
 }
 
 .title {
   font-size: 2rem;
-  line-height: 1rem;
   font-weight: 700;
 }
 
 .language {
   color: $accent;
   text-transform: uppercase;
-  // opacity: .4;
   font-size: .75rem;
   margin-bottom: -.5rem;
 }
@@ -94,7 +82,7 @@ svg, path {
 }
 
 .project {
-  margin-bottom: calc(8rem);
+  margin-bottom: 8rem;
 
   .links {
     a {
@@ -103,7 +91,6 @@ svg, path {
       padding: .75rem 1rem;
       width: 6.5rem;
       margin: 0 .5rem;
-      cursor: pointer;
       text-decoration: none;
       color: $foreground;
 
