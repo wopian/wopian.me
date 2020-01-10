@@ -7,17 +7,10 @@ cache:
 sudo: false
 matrix:
   fast_finish: true
-env:
-  global:
-    - YARN_GPG=no # https://travis-ci.community/t/build-doesnt-finish-after-completing-tests/288
-install:
-- travis_retry yarn install --production
-script:
-- yarn run build
+script: yarn build
 after_success:
 - if [ ${TRAVIS_PULL_REQUEST} = "false" ];
   then bash deploy.sh;
-  else echo "Nothing to deploy";
   fi
 notifications:
   email: false
