@@ -6,9 +6,6 @@ html(lang='en')
       main
         include components/top
         include components/projects
-      link(rel="stylesheet" href="/main.min.css")
       script.
         "serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/sw.js")})
-      script.
-        !function(){var t=document.createElement("script");window.counter="https://wopian_me.goatcounter.com/count",t.async=1,t.src="//gc.zgo.at/count.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}()
-      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap&text=qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM-.%26%3A')
+      script(data-goatcounter='https://wopian_me.goatcounter.com/count' src='https://gc.zgo.at/count.js' async)
