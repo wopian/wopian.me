@@ -14,7 +14,6 @@ if (workbox) {
     { url: '/safari-pinned-tab.svg', revision: null }
   ])
   
-  workbox.routing.registerNavigationRoute('/index.html')
   const handler = workbox.precaching.createHandlerBoundToURL('/index.html')
   const navigationRoute = new workbox.routing.NavigationRoute(handler)
   workbox.routing.registerRoute(navigationRoute)
