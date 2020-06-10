@@ -22,6 +22,6 @@ if (workbox) {
     // Cache style resources, i.e CSS files
     ({ request }) => request.destination === 'style',
     // Use cache but update in the background
-    new workbox.strategies.StyleWhileRevalidate({ cacheName: 'css-cache' })
+    new workbox.strategies.StaleWhileRevalidate({ cacheName: 'css-cache' })
   )
 }
