@@ -4,7 +4,7 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     { url: '/index.html', revision: '2' },
     { url: '/main.min.css', revision: '1' },
-    { url: '/manifest.json', revision: '2' },
+    { url: '/manifest.json', revision: '3' },
     { url: '/favicon.svg', revision: '1' },
     { url: '/mask-icon.svg', revision: '1' },
     { url: '/apple-touch-icon.png', revision: '1' }
