@@ -15,6 +15,9 @@ if (workbox) {
   ])
   
   workbox.routing.registerNavigationRoute('/index.html')
+  const handler = workbox.precaching.createHandlerBoundToURL('/index.html')
+  const navigationRoute = new workbox.routing.NavigationRoute(handler)
+  workbox.routing.registerRoute(navigationRoute)
 
   workbox.routing.registerRoute(
     // Cache style resources, i.e CSS files
