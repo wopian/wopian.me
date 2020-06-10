@@ -6,8 +6,8 @@ if (workbox) {
     { url: '/main.min.css', revision: '1' },
     { url: '/manifest.json', revision: '2' },
     { url: '/favicon.svg', revision: '1' },
-    { url: '/apple-touch-icon.png', revision: '1' },
-    { url: '/safari-pinned-tab.svg', revision: '1' }
+    { url: '/mask-icon.svg', revision: '1' },
+    { url: '/apple-touch-icon.png', revision: '1' }
   ])
   
   const handler = workbox.precaching.createHandlerBoundToURL('/index.html')
