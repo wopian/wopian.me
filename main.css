@@ -23,13 +23,6 @@ svg, path {
 
 .top {
   margin: 8rem 0; }
-  .top p:first-of-type {
-    font-size: 4rem;
-    line-height: 3.5rem;
-    font-weight: 700; }
-  .top p span {
-    display: block;
-    color: #d01257; }
   .top a {
     margin: 0 .5rem;
     text-decoration: none; }
@@ -39,7 +32,21 @@ svg, path {
   .top a, .top svg, .top path {
     width: 2rem; }
 
-.title {
+.project {
+  margin-bottom: 8rem; }
+
+h1, h2 {
+  margin: 0; }
+
+h1 {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  font-weight: 700; }
+  h1 span {
+    display: block;
+    color: #d01257; }
+
+h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2rem; }
@@ -47,27 +54,30 @@ svg, path {
 .language {
   text-transform: uppercase;
   font-size: .8rem;
-  font-weight: 700;
-  margin-bottom: -.5rem;
-  margin-top: -.5rem; }
+  line-height: .8rem;
+  font-weight: 700; }
 
 .summary {
-  line-height: 1.5;
-  margin: -.25rem 0 -.5rem; }
+  line-height: 1.5rem;
+  margin: -.25rem 0; }
   .summary a {
     text-decoration: none;
     color: #fff;
     border-bottom: 1px solid #d01257; }
 
-.project {
-  margin-bottom: 8rem; }
-  .project .links a {
-    display: inline-block;
-    border: 1px solid #d01257;
-    padding: .75rem 1rem;
-    width: 6.5rem;
-    margin: 0 .5rem;
-    text-decoration: none;
-    color: #fff; }
-    .project .links a:first-of-type {
-      background: #d01257; }
+.links a {
+  display: inline-block;
+  border: 1px solid #d01257;
+  padding: .5rem 1rem;
+  width: 6.5rem;
+  margin: 0 .5rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 999rem; }
+  .links a:hover, .links a:first-of-type {
+    background: #d01257; }
+  .links a:hover {
+    filter: brightness(80%); }
+
+.links a, .links a:hover {
+  transition: background 0.2s cubic-bezier(0, 0, 0.3, 1), filter 0.2s cubic-bezier(0, 0, 0.3, 1); }
