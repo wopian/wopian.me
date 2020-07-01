@@ -13,6 +13,7 @@ section {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: #{$grid-columns};
+
   * {
     grid-column: main;
   }
@@ -29,6 +30,7 @@ svg, path {
   a {
     margin: 0 .5rem;
     text-decoration: none;
+
     &:hover {
       svg, path {
         fill: $accent;
@@ -96,13 +98,16 @@ h2 {
     color: $foreground;
     border-radius: 999rem;
 
-    &:hover {
+    &:hover, &:first-of-type {
       background: $accent;
-      transition: background .2s cubic-bezier(0,0,0.3,1);
     }
 
-    &:first-of-type {
-      background: $accent;
+    &:hover {
+      filter: brightness(80%);
     }
+  }
+
+  a, a:hover {
+    transition: background .2s cubic-bezier(0,0,0.3,1), filter .2s cubic-bezier(0,0,0.3,1);
   }
 }
