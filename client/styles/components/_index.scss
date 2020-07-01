@@ -21,11 +21,46 @@ section {
 
 svg, path {
   fill: $foreground;
-  transition: fill .2s cubic-bezier(0,0,0.3,1)
+  &, &:hover {
+    transition: fill .2s cubic-bezier(0,0,0.3,1)
+  }
+}
+
+.sponsor {
+  margin-top: 2rem;
+  //margin-bottom: 8rem;
+
+  span {
+    margin-left: .5rem;
+  }
+
+  svg {
+    margin: 0 auto;
+  }
+
+  span, svg {
+    vertical-align: middle;
+  }
+
+  svg, path {
+    fill: $accent;
+  }
+
+  a {
+    font-size: .8rem;
+    margin: 0 auto;
+
+    &:hover {
+      svg, path {
+        fill: $foreground;
+      }
+    }
+  }
 }
 
 .top {
   margin: 8rem 0;
+  // margin: 8rem 0 .75rem;
 
   a {
     margin: 0 .5rem;
@@ -34,7 +69,6 @@ svg, path {
     &:hover {
       svg, path {
         fill: $accent;
-        transition: fill .2s cubic-bezier(0,0,0.3,1)
       }
     }
   }
@@ -90,24 +124,28 @@ h2 {
 .links {
   a {
     display: inline-block;
-    border: 1px solid $accent;
-    padding: .5rem 1rem;
     width: 6.5rem;
     margin: 0 .5rem;
-    text-decoration: none;
-    color: $foreground;
-    border-radius: 999rem;
 
-    &:hover, &:first-of-type {
+    &:first-of-type {
       background: $accent;
     }
+  }
+}
 
-    &:hover {
-      filter: brightness(80%);
-    }
+.links a, .sponsor a {
+  border: 1px solid $accent;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: $foreground;
+  border-radius: 999rem;
+
+  &:hover {
+    background: $accentHover;
+    border-color: $accentHover;
   }
 
-  a, a:hover {
-    transition: background .2s cubic-bezier(0,0,0.3,1), filter .2s cubic-bezier(0,0,0.3,1);
+  &, &:hover {
+    transition: background .2s cubic-bezier(0,0,0.3,1), border-color .2s cubic-bezier(0,0,0.3,1);
   }
 }
