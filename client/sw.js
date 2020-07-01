@@ -6,8 +6,8 @@ if (workbox) {
 
   workbox.precaching.precacheAndRoute([
     { url: '/favicon.svg', revision: '2020.Jul.01' },
-    { url: '/index.html', revision: '2020.Jul.01' },
-    { url: '/main.min.css', revision: '2020.Jul.01' },
+    { url: '/index.html', revision: '2020.Jul.02' },
+    { url: '/main.min.css', revision: '2020.Jul.02' },
     { url: '/manifest.json', revision: '2020.Jul.01' },
     { url: '/mask-icon.svg', revision: '2020.Jul.01' },
   ])
