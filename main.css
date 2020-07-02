@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-color: #d01257 #0f1021;
+}
+
 body {
   color: #fff;
   background: #0f1021;
@@ -30,7 +34,14 @@ svg, svg:hover, path, path:hover {
 }
 
 .sponsor {
-  margin-top: 2rem;
+  position: sticky;
+  top: 2rem;
+  font-size: 0.8rem;
+  margin: 0 auto 8rem;
+  width: calc((6.5rem * 2) + 1rem);
+}
+.sponsor:hover svg, .sponsor:hover path {
+  fill: #fff;
 }
 .sponsor span {
   margin-left: 0.5rem;
@@ -53,7 +64,7 @@ svg, svg:hover, path, path:hover {
 }
 
 .top {
-  margin: 8rem 0;
+  margin: 8rem 0 0.75rem;
 }
 .top a {
   margin: 0 0.5rem;
@@ -108,7 +119,6 @@ h2 {
 }
 
 .links a {
-  display: inline-block;
   width: 6.5rem;
   margin: 0 0.5rem;
 }
@@ -116,17 +126,19 @@ h2 {
   background: #d01257;
 }
 
-.links a, .sponsor a {
+.links a, .sponsor {
+  display: inline-block;
   border: 1px solid #d01257;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: #fff;
+  background: #0f1021;
   border-radius: 999rem;
 }
-.links a:hover, .sponsor a:hover {
+.links a:hover, .sponsor:hover {
   background: #a60e46;
   border-color: #a60e46;
 }
-.links a, .links a:hover, .sponsor a, .sponsor a:hover {
+.links a, .links a:hover, .sponsor, .sponsor:hover {
   transition: background 0.2s cubic-bezier(0, 0, 0.3, 1), border-color 0.2s cubic-bezier(0, 0, 0.3, 1);
 }
