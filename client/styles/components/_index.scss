@@ -1,3 +1,7 @@
+html {
+  scrollbar-color: $accent $background;
+}
+
 body {
   color: $foreground;
   background: $background;
@@ -27,8 +31,18 @@ svg, path {
 }
 
 .sponsor {
-  margin-top: 2rem;
-  //margin-bottom: 8rem;
+  position: sticky;
+  top: 2rem;
+  font-size: .8rem;
+  margin: 0 auto 8rem;
+  // Same with as two project links
+  width: calc((6.5rem * 2) + 1rem);
+
+  &:hover {
+    svg, path {
+      fill: $foreground;
+    }
+  }
 
   span {
     margin-left: .5rem;
@@ -59,8 +73,7 @@ svg, path {
 }
 
 .top {
-  margin: 8rem 0;
-  // margin: 8rem 0 .75rem;
+  margin: 8rem 0 .75rem;
 
   a {
     margin: 0 .5rem;
@@ -123,7 +136,6 @@ h2 {
 
 .links {
   a {
-    display: inline-block;
     width: 6.5rem;
     margin: 0 .5rem;
 
@@ -133,11 +145,13 @@ h2 {
   }
 }
 
-.links a, .sponsor a {
+.links a, .sponsor {
+  display: inline-block;
   border: 1px solid $accent;
   padding: .5rem 1rem;
   text-decoration: none;
   color: $foreground;
+  background: $background;
   border-radius: 999rem;
 
   &:hover {

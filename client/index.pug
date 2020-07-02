@@ -4,8 +4,8 @@ html(lang='en')
         include components/head
     body
       main
-        include components/sponsor
         include components/top
+        include components/sponsor
         include components/projects
       script.
         (()=>{'serviceWorker'in navigator&&navigator.serviceWorker.register('/sw.js')})()
