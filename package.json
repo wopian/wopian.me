@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "budo -d dist -l -H localhost",
-    "build": "run-p pug styles public javascript && yarn run styles:compress",
+    "build": "run-p pug styles public && run-p styles:compress javascript",
     "pug": "pug client/index.pug -o dist",
     "public": "cpy public/**.* dist",
     "styles": "sass client/styles/main.scss dist/main.css --no-source-map",
