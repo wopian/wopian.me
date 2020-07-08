@@ -2,7 +2,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 
 if (workbox) {
   workbox.precaching.precacheAndRoute([
-    { url: '/index.html', revision: '2020.Jul.08' },
+    { url: '/index.html', revision: '2020.Jul.08-1' },
     { url: '/main.min.css', revision: '2020.Jul.02-1' },
     { url: '/manifest.json', revision: '2020.Jul.01' },
   ])
