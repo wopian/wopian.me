@@ -7,12 +7,12 @@
   "private": true,
   "scripts": {
     "start": "budo -d dist -l -H localhost",
-    "build": "run-p pug styles public && run-p styles:compress javascript",
+    "build": "trash dist/ && run-p pug styles public && yarn styles:compress && yarn workbox",
     "pug": "pug client/index.pug -o dist",
     "public": "cpy public/**.* dist",
     "styles": "sass client/styles/main.scss dist/main.css --no-source-map",
     "styles:compress": "postcss dist/main.css > dist/main.min.css",
-    "javascript": "terser client/sw.js -c -o dist/sw.js "
+    "workbox": "node workbox"
   },
   "contributors": [
     {
@@ -38,7 +38,8 @@
     "pug": "~3.0.0",
     "pug-cli": "~1.0.0-alpha6",
     "sass": "~1.26.9",
-    "terser": "~4.8.0"
+    "trash-cli": "~3.0.0",
+    "workbox-build": "~5.1.3"
   },
   "devDependencies": {
     "budo": "~11.6.3"
