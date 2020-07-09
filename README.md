@@ -6,7 +6,7 @@
 [![david badge]][david]
 [![david dev badge]][david dev]
 
-Homepage for my personal projects and open source contributions.
+Homepage for my personal projects and open source contributions
 
 ![](https://raw.githubusercontent.com/wopian/wopian.me/master/.github/homepage.png)
 
@@ -27,15 +27,15 @@ yarn
 
 ### Making Changes
 
-The HTML is written in [Pug] under `./client/`.
+The HTML is written in [Pug] under `./client/`
 
-The CSS is written in [SCSS] under `./client/styles`.
+The CSS is written in [SCSS] under `./client/styles`
 
 ### Commands
 
 #### Build Website
 
-Compiles the [Pug] and [SCSS] source files into `./dist`.
+Compiles the [Pug] and [SCSS] source files into `./dist`
 
 ```
 yarn build
@@ -43,7 +43,7 @@ yarn build
 
 #### Development Server
 
-Hot reloads changes made to `./dist`. Active port is outputted to terminal.
+Hot reloads changes made to `./dist`. Active port is outputted to terminal
 
 ```
 yarn dev
