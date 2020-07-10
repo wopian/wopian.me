@@ -15,10 +15,12 @@ generateSW({
   // mode: 'production',
   navigationPreload: false,
   runtimeCaching: [
+    /*
     {
       urlPattern: /^https:\/\/gc\.zgo\.at/,
       handler: 'CacheFirst'
     },
+    */
     {
       urlPattern: /^https:\/\/fonts\.gstatic\.com/,
       handler: 'CacheFirst',
