@@ -10,3 +10,15 @@ html(lang='en')
       script.
         (()=>{'serviceWorker'in navigator&&navigator.serviceWorker.register('/sw.js')})()
       script(data-goatcounter='https://wopian_me.goatcounter.com/count' src='https://gc.zgo.at/count.js' async)
+      script(type='application/ld+json').
+        {
+          "@context": "http://schema.org/",
+          "@type": "Person",
+          "name": "James Harris",
+          "jobTitle": "Full Stack Web Developer",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Trowbridge",
+            "addressRegion": "Wiltshire"
+          }
+        }
