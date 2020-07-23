@@ -9,7 +9,7 @@ html(lang='en')
         include components/projects
       script.
         (()=>{'serviceWorker'in navigator&&navigator.serviceWorker.register('/sw.js')})()
-      script(data-goatcounter='https://wopian_me.goatcounter.com/count' src='https://gc.zgo.at/count.js' async)
+      script(data-goatcounter='https://wopian_me.goatcounter.com/count' src='https://gc.zgo.at/count.js' async crossorigin)
       script(type='application/ld+json').
         {
           "@context": "http://schema.org/",
