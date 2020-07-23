@@ -4,7 +4,7 @@
     {
       "src":"/favicon.svg",
       "sizes":"512x512",
-      "purpose":"maskable any"
+      "purpose":"maskable"
     }
   ],
   "theme_color":"#0f1021",
