@@ -42,8 +42,8 @@ jobs:
 
     - name: Deploy SPA
       if: ${{ github.event_name =='push' && github.ref == 'refs/heads/master' }}
+      working-directory: ./dist
       run: |
-        cd dist
         git init
         git config user.name '${{ secrets.GH_USERNAME }}'
         git config user.email '${{ secrets.GH_EMAIL }}'
