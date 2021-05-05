@@ -41,17 +41,13 @@ jobs:
       run: echo "::set-output name=rev::$(git rev-parse --short HEAD)"
 
     - name: Deploy SPA
+      uses: JamesIves/github-pages-deploy-action@4.1.1
       if: ${{ github.event_name =='push' && github.ref == 'refs/heads/master' }}
-      working-directory: ./dist
-      run: |
-        git init
-        git config user.name '${{ secrets.GH_USERNAME }}'
-        git config user.email '${{ secrets.GH_EMAIL }}'
-        git remote add upstream 'https://${{ secrets.GITHUB_TOKEN }}@github.com/wopian/wopian.me.git'
-        git fetch upstream
-        git reset upstream/gh-pages
-        echo "wopian.me" > CNAME
-        touch .
-        git add -A .
-        git commit -am "chore: deploy ${{ steps.revision.outputs.rev }}"
-        git push -q upstream HEAD:gh-pages > /dev/null 2>&1
+      with:
+        branch: gh-pages
+        folder: dist
+        git-config-name: ${{ secrets.GH_USERNAME }}
+        git-config-email: ${{ secrets.GH_EMAIL }}
+        commit-message: "chore: deploy ${{ steps.revision.outputs.rev }}"
+        clean: false
+        single-commit: false
