@@ -38,7 +38,7 @@ svg, svg:hover, path, path:hover {
   top: 2rem;
   font-size: 0.8rem;
   margin: 0 auto 8rem;
-  width: calc((6.5rem * 2) + 1rem);
+  width: 14rem;
 }
 .sponsor:hover svg, .sponsor:hover path {
   fill: #fff;
