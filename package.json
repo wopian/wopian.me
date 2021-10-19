@@ -38,7 +38,7 @@
     "postcss-cli": "~9.0.0",
     "pug": "~3.0.0",
     "pug-cli": "~1.0.0-alpha6",
-    "sass": "~1.42.0",
+    "sass": "~1.43.0",
     "trash-cli": "~4.0.0",
     "workbox-build": "~6.3.0"
   },
