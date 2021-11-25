@@ -39,7 +39,7 @@
     "pug": "~3.0.0",
     "pug-cli": "~1.0.0-alpha6",
     "sass": "~1.43.0",
-    "trash-cli": "~4.0.0",
+    "trash-cli": "~5.0.0",
     "workbox-build": "~6.4.0"
   },
   "devDependencies": {
