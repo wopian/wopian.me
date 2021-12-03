@@ -33,7 +33,25 @@ svg, svg:hover, path, path:hover {
   transition: fill 0.2s cubic-bezier(0, 0, 0.3, 1);
 }
 
+.links a, .sponsor {
+  display: inline-block;
+  border: 1px solid #d01257;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: #0f1021;
+  border-radius: 999rem;
+}
+.links a:hover, .sponsor:hover {
+  background: #a60e46;
+  border-color: #a60e46;
+}
+.links a, .links a:hover, .sponsor, .sponsor:hover {
+  transition: background 0.2s cubic-bezier(0, 0, 0.3, 1), border-color 0.2s cubic-bezier(0, 0, 0.3, 1);
+}
+
 .sponsor {
+  display: flex;
   position: sticky;
   top: 2rem;
   font-size: 0.8rem;
@@ -45,6 +63,7 @@ svg, svg:hover, path, path:hover {
 }
 .sponsor span {
   margin-left: 0.5rem;
+  flex: 1;
 }
 .sponsor svg {
   margin: 0 auto;
@@ -61,6 +80,12 @@ svg, svg:hover, path, path:hover {
 }
 .sponsor a:hover svg, .sponsor a:hover path {
   fill: #fff;
+}
+.sponsor:first-of-type {
+  margin-bottom: 1rem;
+}
+.sponsor:last-of-type {
+  top: 5rem;
 }
 
 .top {
@@ -124,21 +149,4 @@ h2 {
 }
 .links a:first-of-type {
   background: #d01257;
-}
-
-.links a, .sponsor {
-  display: inline-block;
-  border: 1px solid #d01257;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #fff;
-  background: #0f1021;
-  border-radius: 999rem;
-}
-.links a:hover, .sponsor:hover {
-  background: #a60e46;
-  border-color: #a60e46;
-}
-.links a, .links a:hover, .sponsor, .sponsor:hover {
-  transition: background 0.2s cubic-bezier(0, 0, 0.3, 1), border-color 0.2s cubic-bezier(0, 0, 0.3, 1);
 }
