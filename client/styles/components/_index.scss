@@ -30,7 +30,27 @@ svg, path {
   }
 }
 
+.links a, .sponsor {
+  display: inline-block;
+  border: 1px solid $accent;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: $foreground;
+  background: $background;
+  border-radius: 999rem;
+
+  &:hover {
+    background: $accentHover;
+    border-color: $accentHover;
+  }
+
+  &, &:hover {
+    transition: background .2s cubic-bezier(0,0,0.3,1), border-color .2s cubic-bezier(0,0,0.3,1);
+  }
+}
+
 .sponsor {
+  display: flex;
   position: sticky;
   top: 2rem;
   font-size: .8rem;
@@ -46,6 +66,7 @@ svg, path {
 
   span {
     margin-left: .5rem;
+    flex: 1;
   }
 
   svg {
@@ -69,6 +90,13 @@ svg, path {
         fill: $foreground;
       }
     }
+  }
+
+  &:first-of-type {
+    margin-bottom: 1rem;
+  }
+  &:last-of-type {
+    top: 2rem + 3rem;
   }
 }
 
@@ -142,24 +170,5 @@ h2 {
     &:first-of-type {
       background: $accent;
     }
-  }
-}
-
-.links a, .sponsor {
-  display: inline-block;
-  border: 1px solid $accent;
-  padding: .5rem 1rem;
-  text-decoration: none;
-  color: $foreground;
-  background: $background;
-  border-radius: 999rem;
-
-  &:hover {
-    background: $accentHover;
-    border-color: $accentHover;
-  }
-
-  &, &:hover {
-    transition: background .2s cubic-bezier(0,0,0.3,1), border-color .2s cubic-bezier(0,0,0.3,1);
   }
 }
