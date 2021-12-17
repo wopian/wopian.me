@@ -85,7 +85,7 @@ svg, svg:hover, path, path:hover {
   margin-bottom: 1rem;
 }
 .sponsor:last-of-type {
-  top: 5rem;
+  top: 5.1rem;
 }
 
 .top {
@@ -103,7 +103,7 @@ svg, svg:hover, path, path:hover {
 }
 
 .project {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 h1, h2 {
