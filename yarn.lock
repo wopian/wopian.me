@@ -1590,14 +1590,14 @@ browserslist@^4.0.0, browserslist@^4.16.6, browserslist@^4.17.5, browserslist@^4
     node-releases "^2.0.1"
     picocolors "^1.0.0"
 
-budo@~11.6.3:
-  version "11.6.4"
-  resolved "https://registry.yarnpkg.com/budo/-/budo-11.6.4.tgz#5f71c3b097d639ef98d516293f81fe676b090706"
-  integrity sha512-d4XHS1BKUmX6HdgFLvV1sKee0NDRVxkkPlIpclbLFH1fGI1e8nBO7Pz99maprJM7+L2nTJNugrXjRALqnFJN/w==
+budo@~11.7.0:
+  version "11.7.0"
+  resolved "https://registry.yarnpkg.com/budo/-/budo-11.7.0.tgz#544a11e424972de9bdcf28102c0f0675f7176648"
+  integrity sha512-nkulzTNOulJR7PBL+obojWvkSmblxlpSWz6dVsAG2QWyEJmCmtdIUYMpqIEzpFBvR9I/2sW2S0Q1xkDBIQ4pgA==
   dependencies:
     bole "^2.0.0"
     browserify "^16.2.3"
-    chokidar "^2.0.4"
+    chokidar "^3.5.2"
     connect-pushstate "^1.1.0"
     escape-html "^1.0.3"
     events "^1.0.2"
@@ -1623,7 +1623,7 @@ budo@~11.6.3:
     term-color "^1.0.1"
     url-trim "^1.0.0"
     watchify-middleware "^1.8.2"
-    ws "^6.2.1"
+    ws "^6.2.2"
     xtend "^4.0.0"
 
 buffer-from@^1.0.0:
@@ -1768,7 +1768,7 @@ charenc@0.0.2:
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
-"chokidar@>=3.0.0 <4.0.0", chokidar@^3.3.0:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.3.0, chokidar@^3.5.2:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
   integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
@@ -1783,7 +1783,7 @@ charenc@0.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chokidar@^2.0.4, chokidar@^2.1.1:
+chokidar@^2.1.1:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
   integrity sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
@@ -6523,7 +6523,7 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^6.2.1:
+ws@^6.2.2:
   version "6.2.2"
   resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.2.tgz#dd5cdbd57a9979916097652d78f1cc5faea0c32e"
   integrity sha512-zmhltoSR8u1cnDsD43TX59mzoMZsLKqUweyYBAIvTngR3shc0W6aOZylZmq/7hqyVxPdi+5Ud2QInblgyE72fw==
