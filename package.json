@@ -47,7 +47,7 @@
   },
   "renovate": {
     "extends": [
-      "@wopian"
+      "github>wopian/renovate-config"
     ]
   }
 }
