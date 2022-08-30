@@ -43,7 +43,7 @@
     "workbox-build": "~6.5.0"
   },
   "devDependencies": {
-    "budo": "~11.7.0"
+    "budo": "~11.8.0"
   },
   "renovate": {
     "extends": [
