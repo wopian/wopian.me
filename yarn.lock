@@ -1078,9 +1078,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "18.11.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.17.tgz#5c009e1d9c38f4a2a9d45c0b0c493fe6cdb4bcb5"
-  integrity sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==
+  version "18.11.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.18.tgz#8dfb97f0da23c2293e554c5a50d61ef134d7697f"
+  integrity sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1912,9 +1912,9 @@ convert-source-map@~1.1.0:
   integrity sha512-Y8L5rp6jo+g9VEPgvqNfEopjTR4OTYct8lXlS8iVQdmnjDvbdbzYe9rjtFCB9egC86JoNCU61WRY+ScjkZpnIg==
 
 core-js-compat@^3.25.1:
-  version "3.27.0"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.27.0.tgz#e2c58a89df6432a5f36f3fa34097e9e83e709fb6"
-  integrity sha512-spN2H4E/wocMML7XtbKuqttHHM+zbF3bAdl9mT4/iyFaF33bowQGjxiWNWyvUJGH9F+hTgnhWziiLtwu3oC/Qg==
+  version "3.27.1"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.27.1.tgz#b5695eb25c602d72b1d30cbfba3cb7e5e4cf0a67"
+  integrity sha512-Dg91JFeCDA17FKnneN7oCMz4BkQ4TcffkgHP4OWwp9yx3pi7ubqMDXXSacfNak1PQqjc95skyt+YBLHQJnkJwA==
   dependencies:
     browserslist "^4.21.4"
 
@@ -2520,9 +2520,9 @@ fast-safe-stringify@^2.0.7:
   integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
 
 fastq@^1.6.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.14.0.tgz#107f69d7295b11e0fccc264e1fc6389f623731ce"
-  integrity sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
+  integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
 
@@ -3282,9 +3282,9 @@ json-schema@^0.4.0:
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
 json5@^2.2.0, json5@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.2.tgz#64471c5bdcc564c18f7c1d4df2e2297f2457c5ab"
-  integrity sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
+  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
 jsonfile@^6.0.1:
   version "6.1.0"
@@ -6038,9 +6038,9 @@ yaml@^1.10.2:
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
 yaml@^2.1.1:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.2.0.tgz#882c762992888b4144bffdec5745df340627fdd3"
-  integrity sha512-auf7Gi6QwO7HW//GA9seGvTXVGWl1CM/ADWh1+RxtXr6XOxnT65ovDl9fTi4e0monEyJxCHqDpF6QnFDXmJE4g==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.2.1.tgz#3014bf0482dcd15147aa8e56109ce8632cd60ce4"
+  integrity sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==
 
 yargs-parser@^20.2.9:
   version "20.2.9"
