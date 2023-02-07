@@ -8,7 +8,7 @@
   "scripts": {
     "start": "budo -d dist -l -H localhost",
     "build": "trash dist/ && run-p pug styles public && yarn styles:compress && yarn workbox",
-    "pug": "pug client/index.pug -o dist",
+    "pug": "pug3 client/index.pug -o dist",
     "public": "cpy public/**.* dist",
     "styles": "sass client/styles/main.scss dist/main.css --no-source-map",
     "styles:compress": "postcss dist/main.css > dist/main.min.css",
@@ -30,6 +30,7 @@
     "url": "https://github.com/wopian/wopian.me/issues"
   },
   "dependencies": {
+    "@anduh/pug-cli": "~1.0.0-alpha8",
     "autoprefixer": "~10.4.0",
     "cpy-cli": "~4.2.0",
     "cssnano": "~5.1.0",
@@ -37,7 +38,6 @@
     "postcss": "~8.4.0",
     "postcss-cli": "~10.1.0",
     "pug": "~3.0.0",
-    "pug-cli": "~1.0.0-alpha6",
     "sass": "~1.58.0",
     "trash-cli": "~5.0.0",
     "workbox-build": "~6.5.0"
