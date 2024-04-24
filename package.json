@@ -40,7 +40,7 @@
     "pug": "~3.0.0",
     "sass": "~1.75.0",
     "trash-cli": "~5.0.0",
-    "workbox-build": "~7.0.0"
+    "workbox-build": "~7.1.0"
   },
   "devDependencies": {
     "budo": "~11.8.0"
