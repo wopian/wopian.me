@@ -44,7 +44,7 @@ jobs:
       run: echo "::set-output name=rev::$(git rev-parse --short HEAD)"
 
     - name: Deploy SPA
-      uses: JamesIves/github-pages-deploy-action@v4.7.4
+      uses: JamesIves/github-pages-deploy-action@v4.7.6
       if: ${{ github.event_name =='push' && github.ref == 'refs/heads/master' }}
       with:
         branch: gh-pages
